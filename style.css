@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapperr {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-phone img {
+    height: 43rem;
+    float: left;
+    margin-right: 400px;
+    margin-top: 30px;
+}
+
+.instagram-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 4rem;
+}
+
+.login {
+    margin-top: 45px;
+    width: 300px;
+    height: 35px;
+}
+
+.senha {
+    margin-top: 5px;
+    width: 300px;
+    height: 35px;
+}
+
+.instagram-login {
+    margin-top: 10px;
+    width: 300px;
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.group-account {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.link-blue {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./imagens/botao-baixe-da-microsoft-6.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./imagens/googlepaly.png');
+}
+
+@media(max-width:1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width:650px) {
+    .body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-body {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
